@@ -20,4 +20,4 @@ sudo ufw status
 
 sudo ufw allow OpenSSH
 
-echo ' this is commands file for openstack '
+echo 'commands file for openstack'
