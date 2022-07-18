@@ -6,7 +6,7 @@ pipeline {
 	    agent { docker 'maven:3.8.1-adoptopenjdk-11' } 
             steps {
                 sh 'mvn -B clean verify'
-		
+		echo 'Hello, docker.image'
             }
         }
         stage('Test') {
