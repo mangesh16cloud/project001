@@ -15,7 +15,7 @@ pipeline {
         }
         stage('soanr analysis') { 
             steps {
-		    withSonarQubeEnv ('sonarqube-8.9'){
+		    withSonarQubeEnv ('sonarqube-8.9.1'){
                 echo 'this is deploy stage' 
 		    }
             }
