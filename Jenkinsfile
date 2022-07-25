@@ -13,9 +13,11 @@ pipeline {
                 sh 'java -version' 
             }
         }
-        stage('Deploy') { 
+        stage('soanr analysis') { 
             steps {
+		    withSonarQubeEnv ('sonarqube-8.9'){
                 echo 'this is deploy stage' 
+		    }
             }
         }
     }
