@@ -13,7 +13,7 @@ pipeline {
                 sh 'java -version' 
             }
         }
-        stage('soanr analysis') { 
+        stage('soanr analysis server') { 
             steps {
 		    echo 'sonar-scanner'
             }
